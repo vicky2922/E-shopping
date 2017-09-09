@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+	body{
+	text-align:center;
+	font-family:courier;
+	background-color:lightgray;
+	}
+	#header{
+	background-color:#2F4F4F;
+    	color:white;
+    	text-align:center;
+    	padding:5px;
+	}
+	#form1{
+	
+	font-size:15px;
+	}
+	
+	
+	input[type=text],select
+	{
+			width: 400px;
+    		padding: 12px 20px;
+			margin: 8px 0;
+    		display: inline-block;
+    		border: 1px solid #00cc66;
+    		border-radius: 10px;
+    		box-sizing: border-box;	
+	}
+	
+	 input[type=submit], input[type=reset] {
+    	background-color: #4CAF50;
+    	border-radius:10px ;
+    	color: white;
+    	padding: 10px 20px;
+    	text-decoration: none;
+    	margin: 10px 5px;
+    	cursor: pointer;
+}
+
+	
+</style>
+</head>
+<body>
+<div id="header">
+<h1>E-SHOPPING</h1>
+</div>
+<div id="form1">
+<form action="add.php" method="post" enctype="multipart/form-data">
+
+<pre>
+	Itemname  :  <input type="text" name="item" required autocomplete="off" autofocus>
+         Category  :  <select id="cat" name="category" required>
+    			            <option value="mens fashion">men's fashion</option>
+    			            <option value="womens fashion">women's fashion</option>
+							<option value="kids fashion">kids fashion</option>
+							<option value="computers">computers</option>
+							<option value="mobiles">mobiles & tablets</option>
+							<option value="electronics">Electronics</option>
+							<option value="sports">sports</option>
+							<option value="home">Home & Kitchen</option>
+  			            </select>	
+	Price     :  <input type="text" name="price" required autocomplete="off">
+	stock     :  <input type="text" name="stock" required autocomplete="off">
+	Discount  :  <select id="discount" name="discount">
+    			            <option value="0">none</option>
+    			            <option value="10">10%</option>
+							<option value="20">20%</option>
+							<option value="30">30%</option>
+							<option value="40">40%</option>
+							<option value="50">50%</option>
+  			            </select><br>
+Image     :		<input type="file" name="image" id="image">
+	
+		<input type="submit" name="submit">    <input type="reset" value="Reset">
+		      
+</pre>
+</form>
+</div>
+</body>
+</html>
+

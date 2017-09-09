@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	#header {
+	position:fixed;
+	text-align:center;
+	padding:11px;
+	left:0px;
+	width:100%;
+	color:white;
+	background-color:#2F4F4F;}
+	
+	#section {
+	position:fixed;
+	top:110px;
+	left:0px;
+    width:100%;
+	height:300px;
+    float:left;
+    padding:70px; 
+	background-color:#C0C0C0;}
+	
+input[type=text],[type=password] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	border: 2px solid blue;
+    border-radius: 10px;
+}
+	
+ input[type=submit], input[type=reset] {
+   background-color:#008B8B;
+    	border-radius:10px ;
+    	color: white;
+    	padding: 16px 32px;
+    	text-decoration: none;
+    	margin: 4px 10px;
+    	cursor: pointer;
+		position:relative;
+		left:70px;}
+		
+		#footer{
+	background-color:#2F4F4F;
+	color:white;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:157px;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="header">
+	<h1>E-SHOPPING</h1>
+</div>
+<div id="section">
+	<h1 style="color:#000080"> Admin : </h1>
+	<form action="connect_admin.php" method="post">
+	Username : <input type="text" name="userid" required onfocus="this.value='';" value="Enter username" autocomplete="off"><br>
+	Password : <input type="password" name="password" required autocomplete="off"><br><br>
+	<input type="submit" value="Login">
+	<input type="reset" value="Reset">
+	</form>
+</div>
+<div id="footer">
+<h2>&copy;&nbsp;2016, E-Shopping.com, Inc.</h2>
+</div>
+</body>
+</html>

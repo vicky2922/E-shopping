@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{
+	background-color : lightgray;}
+	div.relative{
+	width:100%;
+	height:135px;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:white;}
+	#s1{
+	position:absolute;
+	top:20px;
+	left:250px;
+	}
+	#s2{
+	position:absolute;
+	top:10px;
+	left:10px;}
+	#s3{
+	position:absolute;
+	top:10px;
+	left:270px;
+	padding:20px;
+	}
+	#s4{
+	position:absolute;
+	top:30px;
+	left:613px;
+	}
+	input[type=text]{
+	padding:10px;
+	width:300px;
+	}
+	ul {
+
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	width:250px;
+	height:500px;
+	background-color:#696969;
+	}
+	div.items{
+	position:relative;
+	top:140px;
+	left:250px;
+	width:800px;
+	z-index:-1;
+	}
+	#s5{
+	position:absolute;
+	left:0px;
+	top:0px;
+	}
+	#s6{
+	position:absolute;
+	left:0;
+	top:470px;
+	}
+	#s7{
+	position:absolute;
+	left:410px;
+	top:470px;
+	}
+	#s8{
+	position:absolute;
+	left:0px;
+	top:840px;
+	}
+	#s9{
+	position:absolute;
+	left:410px;
+	top:840px;
+	}
+	#s10{
+	position:absolute;
+	left:810px;
+	top:0px;
+	}
+	#s11{
+	position:absolute;
+	left:810px;
+	top:190px;
+	}
+	#s12{
+	position:absolute;
+	left:810px;
+	top:380px;
+	}
+	#s13{
+	position:absolute;
+	left:810px;
+	top:570px;
+	}
+	#s14{
+	position:absolute;
+	left:810px;
+	top:740px;
+	}
+	#s15{
+	position:absolute;
+	left:810px;
+	top:940px;
+	}
+	
+li a{
+	display: block;
+	color: white;
+    padding: 8px 0 8px 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: white;
+    color: black;}
+	#a{
+	position:fixed;
+	top:150px;
+	left:0px;
+	}
+	div.nav{
+	padding:10px;
+	border-bottom:2px solid black;}
+	
+.dropdown {
+    position: absolute;
+	top:30px;
+	right:10px;
+    display: inline-block;
+}
+.help {
+    position: absolute;
+	top:30px;
+	right:70px;
+}
+.dropbtn{
+	border:none;
+	background-color:white;
+	margin:0;
+	padding:0;}
+
+.dropdown-content {
+    display: none;
+	right:0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #696969;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ .dropbtn:hover{
+    cursor:pointer;}
+	
+	
+</style>
+</head>
+<body>
+<form>
+<div class="relative">
+<div id="s1">
+<img src="shopping-cart.png" width="50px" height="50px"></div>
+<div id="s2">
+<img src="shopping.jpg" width="200px" height="125px"></div>
+<div id="s3">
+<input type="text" name="searchtext" placeholder="search.."></div>
+<div id="s4">
+<a href="a.html"><img src="search.png" width="50px" height="39px"></a>
+</div>
+<div class="dropdown">
+	<button class="dropbtn"><img src="user.png" width="50px" height="50px"></button>
+	<div class="dropdown-content">
+    <a href="#">Orders</a>
+    <a href="#">E-Gift Voucher</a>
+    <a href="logout.php">Logout</a>
+  </div>
+</div>
+<div class="help">
+<a href="help"><img src="help.png" width="50px" height="50px"></a></div>
+	
+</div>
+<div id="a">
+<ul>
+<div class="nav">
+	<li><a href="home.html">All Offers</a></li></div>
+	<div class="nav">
+	<li><a href="news.html">Mobiles & Tablets</a></li>
+	<li><a href="events.html">Computers</a></li></div>
+	<div class="nav">
+	<li><a href="contact.html">Men's Fashion</a></li>
+	<li><a href="about.html">Women's Fashion</a></li>
+	<li><a href="about.html">Kids Fashion</a></li></div>
+	<div class="nav">
+	<li><a href="about.html">Home & Kitchen</a></li>
+	<li><a href="about.html">Spotrs & Fitness</a></li></div>
+	<div class="nav">
+	<li><a href="about.html">Books & Media</a></li></div>
+</ul>
+</div>
+<div class="items">
+
+	<a href="s5.html"><img id="s5" src="smartphones.jpg" width="800px" height="450px"></a>
+	<a href="s6.html"><img id="s6" src="Footwear-Women.jpg" width="385px" height="350px"></a>
+	<a href="s7.html"><img id="s7" src="man-shoes.jpg" width="390px" height="350px"></a>
+	<a href="s8.html"><img id="s8" src="laptop.jpg" width="390px" height="350px"></a>
+	<a href="s9.html"><img id="s9" src="Laptop-Bags.jpg" width="390px" height="350px"></a>
+	<a href="watch.html"><img id="s10" src="watch.jpg" width="270px" height="180px"></a>
+	<a href="rayban.html"><img id="s11" src="ray-ban.jpg" width="270px" height="180px"></a>
+	<a href="trimmer.html"><img id="s12" src="trimmer.jpg" width="270px" height="170px"></a>
+	<a href="pendrive.html"><img id="s13" src="pendrive.jpg" width="270px" height="160px"></a>
+	<a href="kitchen.html"><img id="s14" src="kitchen.jpg" width="270px" height="190px"></a>
+	<a href="headphone.html"><img id="s15" src="headphone.png" width="270px" height="220px"></a>
+	
+</div>
+<body>
+<html>

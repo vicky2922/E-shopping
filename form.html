@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{
+	text-align:center;
+	font-family:courier;
+	}
+	#header{
+		position:fixed;
+		left:0px;
+		top:0px;
+    	color:white;
+		width:100%;
+    	text-align:center;
+    	height:100px;
+		background-color:#2F4F4F;
+	}
+	#form1{
+	position:fixed;
+	left:0px;
+	top:100px;
+	width:100%;
+	text-align:left;
+	background-color:lightgray;
+	font-size:15px;
+	}
+	
+	
+	input[type=text], input[type=email], input[type=number], input[type=password],select
+	{
+			width: 400px;
+    		padding: 12px 20px;
+			margin: 8px 0;
+    		display: inline-block;
+    		border: 1px solid #00cc66;
+    		border-radius: 10px;
+    		box-sizing: border-box;	
+	}
+	
+	input[type=button], input[type=submit], input[type=reset] {
+    	background-color: #008B8B;
+    	border-radius:10px ;
+    	color: white;
+    	padding: 16px 32px;
+    	text-decoration: none;
+    	margin: 4px 2px;
+    	cursor: pointer;
+}
+
+	
+</style>
+</head>
+<body>
+<div id="header">
+<h1>E-SHOPPING</h1>
+</div>
+<div id="form1">
+<form action="register.php" method="post">
+<pre>
+	Firstname   :  <input type="text" name="firstname" required autocomplete="off">
+	Lastname    :  <input type="text" name="lastname" required autocomplete="off">
+	E-mail      :  <input type="email" name="mail" required autocomplete="off">
+	Contact no. :  <input type="number" name="contact" required autocomplete="off">
+	Gender	    :  <input type="radio" name="gender" value="male">Male   <input type="radio" name="gender" value="female">Female  <input type="radio" name="gender" value="other">Other
+  		      
+	State	    :  <select id="country" name="country">
+    			            <option value="australia">Australia</option>
+    			            <option value="india">India</option>
+   		 	            <option value="usa">USA</option>
+						<option value="usa">China</option>
+						<option value="usa">Japan</option>
+						<option value="usa">South Africa</option>
+						<option value="usa">England</option>
+  			            </select>
+	Username    :  <input type="text" name="userid" required autocomplete="off" onfocus="this.value='';" value="Enter username">
+	Password    :  <input type="password" name="password" required autocomplete="off">
+	
+		       <input type="submit" value="Resgister">   <input type="reset" value="Reset">
+		      
+</pre>
+</form>
+</div>
+</body>
+</html>
+
